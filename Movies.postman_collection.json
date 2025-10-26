@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "ea98039d-e81a-41dd-a840-56ef7730d2b3",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49192177",
+		"_collection_link": "https://vincentandresonn5-8690740.postman.co/workspace/Vincent-Andreson's-Workspace~79a52ce3-c6b5-467b-8cf0-efbdc56da544/collection/49192177-ea98039d-e81a-41dd-a840-56ef7730d2b3?action=share&source=collection_link&creator=49192177"
+	},
+	"item": [
+		{
+			"name": "Post Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"judul\" : \"Tom and Jerry\",\r\n    \"tahunRilis\" : \"1999\",\r\n    \"sutradara\" : \"James\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fe3437873cccd0467de379",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fe3437873cccd0467de379"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movie/68fe325dcbd6623814903dd4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movie",
+						"68fe325dcbd6623814903dd4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

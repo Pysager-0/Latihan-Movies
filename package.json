@@ -1,0 +1,28 @@
+{
+  "name": "latihan-movies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pysager-0/Latihan-Movies.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pysager-0/Latihan-Movies/issues"
+  },
+  "homepage": "https://github.com/Pysager-0/Latihan-Movies#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
