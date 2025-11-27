@@ -128,10 +128,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": ""
+					"raw": "{\r\n    \"judul\" : \"Buaya Darat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/movie/68fe325dcbd6623814903dd4",
+					"raw": "http://localhost:3000/api/movie/68fe3486873cccd0467de37d",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -140,7 +145,77 @@
 					"path": [
 						"api",
 						"movie",
-						"68fe325dcbd6623814903dd4"
+						"68fe3486873cccd0467de37d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Vincent\",\r\n    \"email\" : \"vincentandreson_2327240002@mhs.mdp.ac.id\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"vincentandreson_2327240002@mhs.mdp.ac.id\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
 					]
 				}
 			},
